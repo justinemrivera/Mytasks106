@@ -1,0 +1,51 @@
+body{
+    background-color:rgb(4, 46, 85)
+}
+.container-fluid{
+    display: flex;
+}
+.section-list{
+    flex:2.2;
+    text-align: center;
+    background-color: white;
+    margin-inline-end: 30px;
+    margin-top: 30px;
+    }
+
+h3{
+    padding-top:15px;
+    color:black;
+    font-style: italic;
+}
+ .section-form{
+    flex:2;
+    margin-top: 30px;
+    color: white;
+}
+
+#important{
+    font: size 35px;
+    color:black;
+    cursor:pointer;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 15px;
+    background-color:rgb(160, 199, 236);
+}
+
+.task i{
+    flex:1;
+}
+.task .info{
+    flex:4;
+}
+.task label{
+    flex:2;
+}
+.task button{
+    flex:1;
+}

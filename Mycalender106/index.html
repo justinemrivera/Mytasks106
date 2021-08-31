@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--header-->
+<main class="container-fluid">
+
+    <section class="section-list">
+
+    <h3>Your Pending Tasks:</h3>
+    <div class="pending-tasks">
+
+</div>
+<h3>Your Completed Tasks:</h3>
+<div class="done-tasks">
+
+</div>
+    </section>
+
+    <section class="section-form">
+        <form> 
+            
+            <button type="button" id="btnToggle" class="btn btn-sm btn-primary">Hide</button>
+            <button type="button" id="btnClear" class="btn btn-sm btn-danger">Clear</button>
+            <br>
+                
+              <label for="tasktitle">Title</label>
+              <input type="text" class="form-control" id="textTitle" aria-describedby="emailHelp" placeholder="Enter task">
+              
+            </div>
+            <div>
+                <label class="form-label">Important</label>
+                <i id="important" class="fas fa-star"></i>
+            </div>
+            <div>
+              <label for="dueDate">Due Date</label>
+              <input type="datetime-local" class="form-control" id="textDate">
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="textLocation">
+            </div>
+            <div>
+                <label class="form-label">Priority</label>
+                <select id="selPriority" class="form-select">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">Important</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="color">Color</label>
+                <input type="color" class="form-control" id="selColor"> 
+            </div>
+            <div>
+                <label for="contact">Contact</label>
+                <input type="text" class="form-control" id="textContact">
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="textDescription">
+            </div>
+            <button type="button" id="btnSave" class="btn btn-primary">Save Task</button>
+          </form>
+    </section>
+</main>
+<!--footer-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+   
+   <script src="calender.js"></script>
+   <script src="task.js"></script>
+   <script src="test.js"></script>
+ 
+</body>
+</html>
